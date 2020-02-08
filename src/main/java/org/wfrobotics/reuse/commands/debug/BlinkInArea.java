@@ -4,9 +4,9 @@ import org.wfrobotics.reuse.math.geometry.Translation2d;
 import org.wfrobotics.reuse.RobotStateBase;
 import org.wfrobotics.reuse.EnhancedRobot;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
-public class BlinkInArea extends Command
+public class BlinkInArea extends CommandBase
 {
     protected final RobotStateBase state;
     protected final double top, bottom, left, right;

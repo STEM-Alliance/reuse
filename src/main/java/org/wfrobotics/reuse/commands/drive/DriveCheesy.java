@@ -6,10 +6,10 @@ import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
 import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.config.EnhancedIO;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Default {@link TankSubsystem} {@link Command} in teleop */
-public class DriveCheesy extends Command
+public class DriveCheesy extends CommandBase
 {
     protected final TankSubsystem drive = TankSubsystem.getInstance();
     protected final EnhancedIO io = EnhancedRobot.getIO();

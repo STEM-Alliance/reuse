@@ -7,7 +7,7 @@ import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.RobotStateBase;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
 
 /** Set the absolute coordinates the robot is estimated to be at.
  *  This lets the robot know, for example, its starting location on the field. */

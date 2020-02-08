@@ -13,10 +13,10 @@ import org.wfrobotics.reuse.math.geometry.Translation2d;
 import org.wfrobotics.reuse.subsystems.drive.Path;
 import org.wfrobotics.reuse.subsystems.drive.TankMaths;
 
-import edu.wpi.first.wpilibj.command.CommandGroup;
-import edu.wpi.first.wpilibj.command.WaitCommand;
+import edu.wpi.first.wpilibj2.command.CommandGroupBase;
+import edu.wpi.first.wpilibj2.command.WaitCommand;
 
-public class TuningPath extends CommandGroup
+public class TuningPath extends CommandGroupBase
 {
     public TuningPath()
     {

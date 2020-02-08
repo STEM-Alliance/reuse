@@ -4,9 +4,9 @@ import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.RobotStateBase;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
-public class WaitUntilAcrossX extends Command
+public class WaitUntilAcrossX extends CommandBase
 {
     private final RobotStateBase state = EnhancedRobot.getState();
     private final double inchesX;

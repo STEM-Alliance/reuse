@@ -4,9 +4,9 @@ import org.wfrobotics.reuse.math.geometry.Translation2d;
 import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.RobotStateBase;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
-public class WaitUntilInArea extends Command
+public class WaitUntilInArea extends CommandBase
 {
     protected final RobotStateBase state = EnhancedRobot.getState();
     protected final double top, bottom, left, right;

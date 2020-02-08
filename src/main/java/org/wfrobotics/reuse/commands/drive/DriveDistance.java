@@ -5,10 +5,10 @@ import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.RobotStateBase;
 import org.wfrobotics.reuse.config.EnhancedIO;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Drive robot forwards/reverse a distance */
-public class DriveDistance extends Command
+public class DriveDistance extends CommandBase
 {
     protected final RobotStateBase state = EnhancedRobot.getState();
     protected final TankSubsystem drive = TankSubsystem.getInstance();

@@ -1,6 +1,6 @@
 package org.wfrobotics.reuse.commands.config;
 
-import edu.wpi.first.wpilibj.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
 
 /** Selects an Auto Mode parameter */
 public class AutoConfig extends InstantCommand

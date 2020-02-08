@@ -6,10 +6,10 @@ import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
 import org.wfrobotics.reuse.config.EnhancedIO;
 import org.wfrobotics.reuse.EnhancedRobot;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Drive a smooth path connecting waypoints on the field */
-public final class DrivePath extends Command
+public final class DrivePath extends CommandBase
 {
     private final TankSubsystem drive = TankSubsystem.getInstance();
     private final EnhancedIO io = EnhancedRobot.getIO();

@@ -6,10 +6,10 @@ import org.wfrobotics.reuse.config.EnhancedIO;
 import org.wfrobotics.reuse.EnhancedRobot;
 
 import edu.wpi.first.wpilibj.DriverStation;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Safety {@link Command} for {@link TankSubsystem). Toggle or cancel to quit. **/
-public class DriveOff extends Command
+public class DriveOff extends CommandBase
 {
     private final boolean kOpenLoopBrake;
 

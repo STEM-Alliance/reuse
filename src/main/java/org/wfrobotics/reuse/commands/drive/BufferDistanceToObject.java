@@ -6,10 +6,10 @@ import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.config.EnhancedIO;
 import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Use distance sensor to drive to a fixed <b>distance away from an object</b> */
-public class BufferDistanceToObject extends Command
+public class BufferDistanceToObject extends CommandBase
 {
     private final double target;
     private final double tol;

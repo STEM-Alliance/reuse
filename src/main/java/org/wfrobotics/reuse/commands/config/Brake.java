@@ -2,7 +2,7 @@ package org.wfrobotics.reuse.commands.config;
 
 import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
 
-import edu.wpi.first.wpilibj.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
 
 public class Brake extends InstantCommand
 {

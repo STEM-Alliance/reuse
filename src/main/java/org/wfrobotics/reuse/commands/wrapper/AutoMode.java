@@ -4,13 +4,13 @@ import org.wfrobotics.reuse.config.AutoFactory;
 import org.wfrobotics.reuse.config.AutoRunner;
 import org.wfrobotics.reuse.utilities.ConsoleLogger;
 
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import edu.wpi.first.wpilibj2.command.CommandGroupBase;
 
 /**
  * Parent class for autonomous modes. Ran by {@link AutoRunner}. Built by {@link AutoFactory}.
  * @author STEM Alliance of Fargo Moorhead
  */
-public abstract class AutoMode extends CommandGroup
+public abstract class AutoMode extends CommandGroupBase
 {
     protected int startingDelay = 0;
 

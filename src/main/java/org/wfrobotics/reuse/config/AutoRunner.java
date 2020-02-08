@@ -1,6 +1,6 @@
 package org.wfrobotics.reuse.config;
 
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import edu.wpi.first.wpilibj2.command.CommandGroupBase;
 
 /**
  * Runs the currently selected autonomous mode
@@ -19,12 +19,12 @@ public class AutoRunner
     }
 
     private boolean running = false;
-    protected CommandGroup selected = null;
+    protected CommandGroupBase selected = null;
 
     protected AutoRunner() { }
 
     /** Set the command currently selected to run when autonomous mode starts */
-    public synchronized void register(CommandGroup mode)
+    public synchronized void register(CommandGroupBase mode)
     {
         if (!running)
         {

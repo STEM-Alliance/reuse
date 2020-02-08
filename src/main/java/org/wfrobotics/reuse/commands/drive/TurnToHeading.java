@@ -6,10 +6,10 @@ import org.wfrobotics.reuse.RobotStateBase;
 import org.wfrobotics.reuse.config.EnhancedIO;
 
 import edu.wpi.first.wpilibj.DriverStation;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Turn robot to angle **/
-public class TurnToHeading extends Command
+public class TurnToHeading extends CommandBase
 {
     private final boolean kOpenLoopBrake;
 

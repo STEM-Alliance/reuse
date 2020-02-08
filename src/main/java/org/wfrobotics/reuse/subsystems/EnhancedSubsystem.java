@@ -4,15 +4,14 @@ import org.wfrobotics.reuse.utilities.Reportable;
 import org.wfrobotics.reuse.utilities.Testable;
 
 import edu.wpi.first.wpilibj.Sendable;
-import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj.smartdashboard.SendableBuilder;
 
 /**
  * STEM Alliance enhanced {@link Subsystem}
  * @author STEM Alliance of Fargo Moorhead
  */
-public abstract class EnhancedSubsystem extends Subsystem implements Reportable, Testable
+public abstract class EnhancedSubsystem extends SubsystemBase implements Reportable, Testable
 {
     /**
      * Update <b>before</b> {@link Scheduler} is run.

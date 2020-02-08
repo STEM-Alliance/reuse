@@ -4,10 +4,10 @@ import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
 import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.reuse.config.EnhancedIO;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** Bang bang control. Not a command you usually want outside rare, special situations */
-public class DriveOpenLoop extends Command
+public class DriveOpenLoop extends CommandBase
 {
     private final TankSubsystem drive;
     private final EnhancedIO io = EnhancedRobot.getIO();

@@ -5,10 +5,10 @@ import org.wfrobotics.reuse.commands.drive.DriveOff;
 import org.wfrobotics.reuse.commands.drive.DrivePath;
 import org.wfrobotics.reuse.config.PathContainer;
 
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import edu.wpi.first.wpilibj2.command.CommandGroupBase;
 
 /** Use to rapidly test path by putting on a teleop button */
-public class TeleopPath extends CommandGroup
+public class TeleopPath extends CommandGroupBase
 {
     public TeleopPath(PathContainer path)
     {

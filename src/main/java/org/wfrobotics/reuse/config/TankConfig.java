@@ -9,7 +9,7 @@ import org.wfrobotics.reuse.subsystems.drive.PathFollower;
 import org.wfrobotics.reuse.subsystems.drive.PathFollower.Parameters;
 import org.wfrobotics.reuse.subsystems.drive.TankMaths;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /** @author STEM Alliance of Fargo Moorhead */
 public class TankConfig
@@ -82,7 +82,7 @@ public class TankConfig
     }
 
     /** Subclass to use another command */
-    public Command getTeleopCommand()
+    public CommandBase getTeleopCommand()
     {
         return new DriveCheesy();
     }

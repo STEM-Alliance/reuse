@@ -2,11 +2,11 @@ package org.wfrobotics.reuse.commands.wrapper;
 
 import org.wfrobotics.reuse.utilities.ConsoleLogger;
 
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.CommandGroup;
+import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.CommandGroupBase;
 
 /** <i>Impromptu</i> way of creating a {@link CommandGroup} of {@link Command}s sequentially without declaring a new class */
-public class SeriesCommand extends CommandGroup
+public class SeriesCommand extends CommandGroupBase
 {
     /**
      * Run each {@link Command} in an impromptu {@link CommandGroup}
@@ -16,7 +16,7 @@ public class SeriesCommand extends CommandGroup
      *
      * @param Each {@link Command} that will run sequentially
      */
-    public SeriesCommand(Command... commands)
+    public SeriesCommand(CommandBase... commands)
     {
         if (commands.length < 2)
         {

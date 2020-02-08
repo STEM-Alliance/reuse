@@ -2,8 +2,8 @@ package org.wfrobotics.reuse.config;
 
 import org.wfrobotics.reuse.config.Xbox.AXIS;
 
-import edu.wpi.first.wpilibj.buttons.Button;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.buttons.Button;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
 /**
  * Assigns {@link Command}s to run when {@link Button}s are pressed
@@ -20,43 +20,43 @@ public abstract class ButtonFactory
         WHILE_HELD;
     }
 
-    public static Button makeButton(Xbox provider, Xbox.BUTTON button, TRIGGER when, Command action)
+    public static Button makeButton(Xbox provider, Xbox.BUTTON button, TRIGGER when, CommandBase action)
     {
         return setTrigger(new XboxButton(provider, button), when, action);
     }
 
-    public static Button makeButton(SpudJoystick provider, SpudJoystick.BUTTON button, TRIGGER when, Command action)
+    public static Button makeButton(SpudJoystick provider, SpudJoystick.BUTTON button, TRIGGER when, CommandBase action)
     {
         return setTrigger(new SpudJoystickButton(provider, button), when, action);
     }
 
-    public static Button makeButton(HerdJoystick provider, int button, TRIGGER when, Command action)
+    public static Button makeButton(HerdJoystick provider, int button, TRIGGER when, CommandBase action)
     {
         return setTrigger(new JoystickButton(provider, button), when, action);
     }
 
-    public static Button makeButton(Xbox provider, Xbox.AXIS axis, double thresholdOn, TRIGGER when, Command action)
+    public static Button makeButton(Xbox provider, Xbox.AXIS axis, double thresholdOn, TRIGGER when, CommandBase action)
     {
         return setTrigger(new XboxAxisButton(provider, axis, thresholdOn), when, action);
     }
 
 
-    public static Button makeButton(Xbox provider, AXIS axis, double thresholdPos, double thresholdNeg, TRIGGER when, Command action)
+    public static Button makeButton(Xbox provider, AXIS axis, double thresholdPos, double thresholdNeg, TRIGGER when, CommandBase action)
     {
         return setTrigger(new XboxAxisButton(provider, axis, thresholdPos, thresholdNeg), when, action);
     }
 
-    public static Button makeButton(Xbox provider, Xbox.DPAD button, TRIGGER when, Command action)
+    public static Button makeButton(Xbox provider, Xbox.DPAD button, TRIGGER when, CommandBase action)
     {
         return setTrigger(new XboxDpadButton(provider, button), when, action);
     }
 
-    public static Button makeAnyDpadButton(Xbox provider, TRIGGER when, Command action)
+    public static Button makeAnyDpadButton(Xbox provider, TRIGGER when, CommandBase action)
     {
         return setTrigger(new AnyDpadButton(provider), when, action);
     }
 
-    private static Button setTrigger(Button b, TRIGGER when, Command action)
+    private static Button setTrigger(Button b, TRIGGER when, CommandBase action)
     {
         switch (when)
         {
